@@ -18,7 +18,8 @@ class Piki < Sinatra::Base
   end
 
   get '/esk' do
-    markdown :test, :layout_engine => :erb
+    markdown :test, :layout_engine => :erb, :locals => { 
+      title: "Notatki z laboratorium ESK" }
   end
 
   # Post Routes
