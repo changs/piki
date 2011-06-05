@@ -46,7 +46,7 @@
 	* User mode - milited access, single window - To samo co w 'multiple window',  
 		dodatkowo możliwość otwarcia tylko jednego okna Consoli.
 
-## Lab 2\.  Podstawy: Windows Firewall with Advanced 
+## Lab 2\.  Podstawy: Windows Firewall with Advanced Security 
 - Przy zablokowaniu Echo Replay z poziomu klienta nic nie widać przy pingach,  
 	po prostu nie ma odpowiedzi, tak jakby serwer nie był podłączony do sieci.
 
