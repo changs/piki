@@ -1,0 +1,8 @@
+<h1>Piki, Bartosz Pranczke</h1>
+<h4>List of items</h4>
+<ul>
+  <% pages.each do |page| %>
+  <% name = File.basename(page, ".mkd") %>
+  <li><%= link_to "/show/#{name}", name %></li>
+  <% end %>
+</ul
