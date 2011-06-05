@@ -11,12 +11,18 @@ class Piki < Sinatra::Base
   # End of Configuration
 
   # Helpers
+  def link_to(url,text=url,opts={})
+    attributes = ""
+    opts.each { |key,value| attributes << key.to_s << "=\"" << value << "\" "}
+    "<a href=\"#{url}\" #{attributes}>#{text}</a>"
+  end
 
   # Routes
   #
   # Get Routes
   get '/' do
-    "Bartosz Pranczke piki, nothing is here for now."
+    pages = Dir["views/*.mkd"].to_a
+    erb :all, locals: { pages: pages }
   end
 
   get '/show/:file' do
@@ -29,8 +35,7 @@ class Piki < Sinatra::Base
     halt 404 unless FileTest.exist? ("views/#{params[:file]}" )
     send_file File.dirname(__FILE__) + "/views/#{params[:file]}.mkd", 
         :type => :text
-  end
-  
+  end 
 
   # Post Routes
 
