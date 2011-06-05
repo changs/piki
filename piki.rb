@@ -1,5 +1,5 @@
 require 'sinatra/base'
-require 'rdiscount'
+#require 'rdiscount'
 
 class Piki < Sinatra::Base
 
@@ -18,7 +18,7 @@ class Piki < Sinatra::Base
   end
 
   get '/esk' do
-    markdown :test, :layout_engine => :erb, :locals => { 
+    erb :test, :layout_engine => :erb, :locals => { 
       title: "Notatki z laboratorium ESK" }
   end
 
