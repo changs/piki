@@ -14,6 +14,10 @@ class Piki < Sinatra::Base
   #
   # Get Routes
   get '/' do
+    "Bartosz Pranczke piki, nothing is here for now."
+  end
+
+  get '/esk' do
     markdown :test
   end
 
