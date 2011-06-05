@@ -1,2 +1,2 @@
-require 'main'
+require './piki'
 run Sinatra::Application
