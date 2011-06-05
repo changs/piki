@@ -90,7 +90,7 @@
 
 - Gdy adres już zajęty przez inny komputer, klient odpowiada DHCP Decline
 
-## Lab4\. Zdalny dostęp: Telnet SSH
+## Lab 4\. Zdalny dostęp: Telnet SSH
 
 - Połączenie telnet przy domyślnej konfiguracj WS2008 jest niemożliwe.  
 	Nie ma żadnej odpowiedzi na pakiety klienta.
@@ -142,12 +142,13 @@
 
 - Logowanie na zdalnie zalogowanego admina kończy jego sesje.
 
-- Jednoczesna praca 2 różnych zalogowanych użytkowników jest możliwa.
+- Jednoczesna praca 2 różnych zalogowanych użytkowników jest możliwa.  
 	Przy próbie podłączenia 3, trzeba prosić kogoś o wylogowanie.
 
-- Terminal Services Manager (w WS 2008 R2 Remote Desktop Services Manager) umożliwia    wysyłanie wiadomości do użytkowników, wylogowywanie ich etc.
+- Terminal Services Manager (w WS 2008 R2 Remote Desktop Services Manager) umożliwia  
+  wysyłanie wiadomości do użytkowników, wylogowywanie ich etc.
 
-## Lab6\. Active Directory Domain Services
+## Lab 6\. Active Directory Domain Services
 
 - Wymagane są statycznych konfiguracji adresów IP.
 
