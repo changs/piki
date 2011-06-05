@@ -152,8 +152,8 @@
 
 - Wymagane są statycznych konfiguracji adresów IP.
 
-- Instalacja Active Directory DS poprzez komende dcpromo.
+- Instalacja Active Directory DS poprzez komendę dcpromo.
 
-- Przy konfiguracji klienta należy jako adres DNS podaća adres serwera AD.
+- Przy konfiguracji klienta należy jako adres DNS podać adres serwera AD.
 
 - Zalogować się do domeny można tylko na konta utworzone na serwerze.
