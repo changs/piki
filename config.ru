@@ -1,2 +1,2 @@
 require './piki'
-run Sinatra::Application
+run Piki
