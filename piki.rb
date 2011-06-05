@@ -21,6 +21,11 @@ class Piki < Sinatra::Base
     markdown :esk, :layout_engine => :erb
   end
 
+  get '/esk/source' do
+    send_file File.dirname(__FILE__) + "/views/esk.mkd", :type => :text
+  end
+  
+
   # Post Routes
 
   # Error Handlers
