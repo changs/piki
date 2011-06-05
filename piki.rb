@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'rdiscount'
 
 class Piki < Sinatra::Base
 
@@ -13,16 +14,17 @@ class Piki < Sinatra::Base
   #
   # Get Routes
   get '/' do
-    "Piki welcomes you."
+    markdown :test
   end
 
   # Post Routes
 
   # Error Handlers
   error 404 do
-    "Sorry, requested page doesn't exist"
+    "Sorry, requested page doesn't exist."
   end
 
-  run! if app_file == $0 # start the server if ruby file executed directly
+  # Start the server if ruby file executed directly
+  run! if app_file == $0
 
 end
