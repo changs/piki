@@ -1,5 +1,5 @@
 require 'sinatra/base'
-require 'rdiscount'
+#require 'rdiscount'
 
 class Piki < Sinatra::Base
 
@@ -10,6 +10,8 @@ class Piki < Sinatra::Base
   end
   # End of Configuration
 
+  # Helpers
+
   # Routes
   #
   # Get Routes
@@ -17,12 +19,16 @@ class Piki < Sinatra::Base
     "Bartosz Pranczke piki, nothing is here for now."
   end
 
-  get '/esk' do
-    markdown :esk, :layout_engine => :erb
+  get '/show/:file' do
+    #markdown :esk, :layout_engine => :erb
+    halt 404 unless FileTest.exist? ("views/#{params[:file]}" )
+    erb :"#{params[:file]}" 
   end
 
-  get '/esk/source' do
-    send_file File.dirname(__FILE__) + "/views/esk.mkd", :type => :text
+  get '/show/:file/source' do
+    halt 404 unless FileTest.exist? ("views/#{params[:file]}" )
+    send_file File.dirname(__FILE__) + "/views/#{params[:file]}.mkd", 
+        :type => :text
   end
   
 
