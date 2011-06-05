@@ -18,7 +18,7 @@ class Piki < Sinatra::Base
   end
 
   get '/esk' do
-    markdown :test, :layout_engine => :erb
+    markdown :esk, :layout_engine => :erb
   end
 
   # Post Routes
