@@ -1,4 +1,6 @@
-# Eksploatacja Sieci Komputerowych
+# Eksploatacja Sieci Komputerowych  
+
+
 
 ## Lab 1\. Wprowadzenie do Windows Server 2008 Standard - konsola MMC
 
@@ -49,8 +51,8 @@
 	po prostu nie ma odpowiedzi, tak jakby serwer nie był podłączony do sieci.
 
 - Overview Firewalla zawiera informacje o tym dla jakich profili (Domain. Private,  
-	Public) firewall jest aktywny oraz podsumowanie reguł w stylu:
-	"Co nie jest dozwolone jest zabronione".
+	Public) firewall jest aktywny oraz podsumowanie reguł w stylu:  
+	> "Co nie jest dozwolone jest zabronione".
 
 - Reguły można dodawać dla programu, portu, predefiniowane lub custom.  
 	Można także decydować dla jakich adresów IP dana reguła jest ważna (lokalnych i  
