@@ -27,12 +27,12 @@ class Piki < Sinatra::Base
 
   get '/show/:file' do
     #markdown :esk, :layout_engine => :erb
-    halt 404 unless FileTest.exist? ("views/#{params[:file]}" )
-    erb :"#{params[:file]}" 
+    halt 404 unless FileTest.exist? ((File.dirname(__FILE__) + "/views/#{params[:file]}" + ".mkd") )
+    markdown :"#{params[:file]}", :layout_engine => :erb 
   end
 
   get '/show/:file/source' do
-    halt 404 unless FileTest.exist? ("views/#{params[:file]}" )
+    halt 404 unless FileTest.exist? ("/views/#{params[:file]}" )
     send_file File.dirname(__FILE__) + "/views/#{params[:file]}.mkd", 
         :type => :text
   end 
